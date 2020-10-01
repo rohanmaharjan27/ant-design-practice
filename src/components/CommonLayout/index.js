@@ -1,11 +1,9 @@
 import { Layout } from "antd";
 import React from "react";
-import HomeFooter from "./HomeFooter";
-import Profile from "./Profile";
 import SideMenu from "./SideMenu";
 import TopMenu from "./TopMenu";
 
-function IndexHome() {
+function CommonLayout(props) {
   const { Header, Footer, Sider, Content } = Layout;
   return (
     <>
@@ -18,18 +16,12 @@ function IndexHome() {
             <SideMenu />
           </Sider>
           <Layout>
-            <Content>
-              <Profile />
-            </Content>
+            <Content>{props.children}</Content>
           </Layout>
         </Layout>
-        <Layout>
-          <Footer>
-            <HomeFooter />
-          </Footer>
-        </Layout>
+        <Layout></Layout>
       </Layout>
     </>
   );
 }
-export default IndexHome;
+export default CommonLayout;

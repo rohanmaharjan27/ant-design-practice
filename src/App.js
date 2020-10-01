@@ -11,6 +11,7 @@ import Infytrip from "./components/InfyTrip";
 import PicturesWall from "./components/PicturesWall";
 import ProductTable from "./components/ProductTable";
 import ResponsiveGrid from "./components/ResponsiveGrid";
+import IndexHome from "./pages/homepage/IndexHome";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       {/* <ResponsiveGrid /> */}
       {/* <BasicGrid /> */}
       {/* <ProductTable /> */}
-      <Infytrip />
+      <IndexHome />
       {/* <ImageUpload /> */}
       {/* <ImageUploadButtons /> */}
 
